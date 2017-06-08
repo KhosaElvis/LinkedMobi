@@ -3,9 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:LinkedMobi"
              x:Class="LinkedMobi.MainPage">
-
-	<Label Text="Welcome to Xamarin Forms!" 
+    <StackLayout>
+        <Label Text="Linkedin" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" 
+           FontSize="Large"/>
 
+        <Label Text="Connect to Opportunity" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+           FontSize="Large"/>
+
+        <Label Text="...." 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+           FontSize="Large"/>
+        
+
+        <Button Text="JOIN NOW" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+                Clicked="SignupButton_Clicked"/>
+
+        <Button Text="SIGN IN" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" 
+           FontSize="Small" Clicked="SignInButton_Clicked"/>
+    </StackLayout>
+	
 </ContentPage>

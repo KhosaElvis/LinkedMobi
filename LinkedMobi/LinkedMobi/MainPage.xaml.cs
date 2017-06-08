@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using LinkedMobi.Views.Persons;
 
 namespace LinkedMobi
 {
@@ -12,6 +13,16 @@ namespace LinkedMobi
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void SignupButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Signup());
+        }
+
+        private async void SignInButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Signin());
         }
     }
 }
